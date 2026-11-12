@@ -82,9 +82,7 @@ if (user) {
                         New Booking
                     </h3>
 
-                    <button onclick="closeBookingModal()">
-                        ✕
-                    </button>
+                   <button type="button" onclick="closeBookingModal()">✕</button>
 
                 </div>
 
@@ -680,7 +678,8 @@ function openBookingModal(id = null) {
     }
 
 
-    modal.classList.add("show");
+    modal.style.display = "flex";
+modal.classList.add("show");
 
 }
 
@@ -690,11 +689,12 @@ function openBookingModal(id = null) {
 // ==========================================
 
 function closeBookingModal() {
+    const modal = document.getElementById("bookingModal");
 
-    document
-        .getElementById("bookingModal")
-        .classList.remove("show");
-
+    if (modal) {
+        modal.classList.remove("show");
+        modal.style.display = "none";
+    }
 }
 
 
