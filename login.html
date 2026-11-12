@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | CaterPro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="auth-page">
+
+<a href="index.html" class="auth-brand">
+    🍽️ CaterPro
+</a>
+
+<div class="auth-container">
+
+    <div class="auth-info">
+
+        <span class="eyebrow">
+            WELCOME BACK
+        </span>
+
+        <h1>
+            Manage your catering business.
+        </h1>
+
+        <p>
+            Login to manage bookings, customers,
+            services and reports.
+        </p>
+
+        <div class="auth-points">
+
+            <span>✓ Booking management</span>
+            <span>✓ Status tracking</span>
+            <span>✓ Business dashboard</span>
+
+        </div>
+
+    </div>
+
+    <form id="loginForm" class="auth-card">
+
+        <h2>
+            Sign in
+        </h2>
+
+        <p class="muted">
+            Login to your account.
+        </p>
+
+        <label>
+            Email
+
+            <input
+                id="loginEmail"
+                type="email"
+                placeholder="admin@caterpro.com"
+                required
+            >
+
+        </label>
+
+        <label>
+            Password
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="admin123"
+                required
+            >
+
+        </label>
+
+        <div id="loginError"
+             class="form-message error hidden">
+        </div>
+
+        <button
+            type="submit"
+            class="btn btn-primary full">
+            Login
+        </button>
+
+        <div class="demo-box">
+
+            <strong>Demo Admin</strong>
+
+            <br>
+
+            Email:
+            admin@caterpro.com
+
+            <br>
+
+            Password:
+            admin123
+
+        </div>
+
+        <p class="auth-link">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Register
+            </a>
+
+        </p>
+
+    </form>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
